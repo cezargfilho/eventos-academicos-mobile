@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EventoActivity">
+
+    <ImageView
+        android:id="@+id/imageViewEvento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/auditorio_evento"
+        android:adjustViewBounds="true"/>
+
+    <TextView
+        android:id="@+id/nomeEvento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Nome Evento"
+        android:padding="16dp"/>
+    <TextView
+        android:id="@+id/localEvento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Local Evento"
+        android:padding="16dp"/>
+    <Button
+        android:id="@+id/buttonClassificar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Classificar"/>
+    <Button
+        android:id="@+id/ButtonShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Compartilhar"
+        />
+
+
+</LinearLayout>
+
