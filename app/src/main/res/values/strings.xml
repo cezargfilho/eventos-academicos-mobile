@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">EventosApp</string>
+    <string name="my_events">Meus Eventos</string>
+    <string name="search">Buscar</string>
+    <string name="tipo">Tipo</string>
+    <string name="nome_evento">Nome Evento</string>
+    <string name="data_evento"></string>
+    <string name="preco_evento"></string>
+    <string name="descricao_evento"></string>
+    <string name="local_evento"></string>
+</resources>

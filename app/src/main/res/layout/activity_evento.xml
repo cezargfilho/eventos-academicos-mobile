@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EventoActivity">
+
+    <TextView
+        android:id="@+id/nome_evento_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nome_evento"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/image_evento_ImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nome_evento_TextView"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_launcher_eventos" />
+
+    <TextView
+        android:id="@+id/local_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_evento_ImageView"
+        android:text="Local:" />
+
+    <TextView
+        android:id="@+id/local_dinamico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/local_TextView"
+        android:text="@string/local_evento" />
+
+    <TextView
+        android:id="@+id/preco_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_evento_ImageView"
+        android:layout_marginLeft="200dp"
+        android:layout_toRightOf="@+id/local_TextView"
+        android:text="Preço:" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_evento_ImageView"
+        android:layout_toRightOf="@+id/preco_TextView"
+        android:text="@string/preco_evento"/>
+
+    <TextView
+        android:id="@+id/data_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/local_dinamico"
+        android:text="Data:" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/local_dinamico"
+        android:layout_toRightOf="@id/data_TextView"
+        android:text="@string/data_evento"/>
+
+    <TextView
+        android:id="@+id/descricao_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/data_TextView"
+        android:text="Descrição:" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descricao_TextView"
+        android:text="@string/descricao_evento"/>
+
+</RelativeLayout>
