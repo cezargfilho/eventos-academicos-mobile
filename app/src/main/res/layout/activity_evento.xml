@@ -49,7 +49,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/image_evento_ImageView"
         android:layout_toRightOf="@+id/preco_TextView"
-        android:text="@string/preco_evento"/>
+        android:text="@string/preco_evento" />
 
     <TextView
         android:id="@+id/data_TextView"
@@ -57,12 +57,13 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/local_dinamico"
         android:text="Data:" />
-    <TextView
+
+    <TextView   
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/local_dinamico"
         android:layout_toRightOf="@id/data_TextView"
-        android:text="@string/data_evento"/>
+        android:text="@string/data_evento" />
 
     <TextView
         android:id="@+id/descricao_TextView"
@@ -70,10 +71,11 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/data_TextView"
         android:text="Descrição:" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/descricao_TextView"
-        android:text="@string/descricao_evento"/>
+        android:text="@string/descricao_evento" />
 
 </RelativeLayout>
