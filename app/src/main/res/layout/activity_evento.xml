@@ -10,15 +10,18 @@
         android:id="@+id/nome_evento_TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
         android:text="@string/nome_evento"
-        android:textSize="20dp" />
+        android:textColor="@color/colorBlack"
+        android:textSize="30dp" />
 
     <ImageView
         android:id="@+id/image_evento_ImageView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/nome_evento_TextView"
-        android:layout_centerHorizontal="true"
         android:src="@mipmap/ic_launcher_eventos" />
 
     <TextView
@@ -26,14 +29,32 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/image_evento_ImageView"
-        android:text="Local:" />
+        android:text="Local:"
+        android:textColor="@color/colorBlack" />
 
     <TextView
         android:id="@+id/local_dinamico"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/local_TextView"
-        android:text="@string/local_evento" />
+        android:text="@string/local_evento"
+        android:textColor="@color/colorBlack" />
+
+    <TextView
+        android:id="@+id/horario_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/local_dinamico"
+        android:text="@string/horario_evento"
+        android:textColor="@color/colorBlack" />
+
+    <TextView
+        android:id="@+id/horario_texto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/local_dinamico"
+        android:layout_toRightOf="@id/horario_TextView"
+        android:textColor="@color/colorBlack" />
 
     <TextView
         android:id="@+id/preco_TextView"
@@ -42,40 +63,49 @@
         android:layout_below="@id/image_evento_ImageView"
         android:layout_marginLeft="200dp"
         android:layout_toRightOf="@+id/local_TextView"
-        android:text="Preço:" />
+        android:text="Preço:"
+        android:textColor="@color/colorBlack" />
 
     <TextView
+        android:id="@+id/preço_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/image_evento_ImageView"
         android:layout_toRightOf="@+id/preco_TextView"
-        android:text="@string/preco_evento" />
+        android:text="@string/preco_evento"
+        android:textColor="@color/colorBlack" />
 
     <TextView
         android:id="@+id/data_TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/local_dinamico"
-        android:text="Data:" />
+        android:layout_below="@+id/horario_TextView"
+        android:text="Data:"
+        android:textColor="@color/colorBlack"/>
 
-    <TextView   
+    <TextView
+        android:id="@+id/data_texto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/local_dinamico"
+        android:layout_below="@+id/horario_TextView"
         android:layout_toRightOf="@id/data_TextView"
-        android:text="@string/data_evento" />
+        android:text="@string/data_evento"
+        android:textColor="@color/colorBlack"/>
 
     <TextView
         android:id="@+id/descricao_TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/data_TextView"
-        android:text="Descrição:" />
+        android:text="Descrição:"
+        android:textColor="@color/colorBlack"/>
 
     <TextView
+        android:id="@+id/descricao_campoText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/descricao_TextView"
-        android:text="@string/descricao_evento" />
+        android:text="@string/descricao_evento"
+        android:textColor="@color/colorBlack"/>
 
 </RelativeLayout>

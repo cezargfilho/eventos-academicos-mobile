@@ -13,7 +13,8 @@
         android:layout_centerHorizontal="true"
         android:paddingTop="16dp"
         android:text="@string/app_name"
-        android:textSize="32sp" />
+        android:textSize="32sp"
+        android:textColor="@color/colorBlack"/>
 
     <ImageButton
         android:id="@+id/icon_buscar"
